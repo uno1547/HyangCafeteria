@@ -1,0 +1,18 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #7dcaff;
+}
+
+.nav-bar li {
+  flex-shrink: 0;
+}
+
+.nav-bar a {
+  padding: 15px 30px;
+  color: white;
+}
+
+.nav-bar .current a {
+  color: black;
+}
