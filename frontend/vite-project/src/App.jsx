@@ -5,6 +5,7 @@ import HomePage from "./pages/Homepage"
 import Hyang1 from "./pages/Hyang1"
 import Restaurant from './pages/Restaurant'
 
+import "./App.css"
 function App() {  
   return (
     <Router>

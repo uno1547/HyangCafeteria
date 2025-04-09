@@ -1,0 +1,19 @@
+.nav-bar{
+    list-style: none;
+    display: flex;
+    background-color: #5090ff;
+    justify-content: space-around;
+
+}
+
+.nav-bar li a{
+    color: white;
+    padding: 10px;
+}
+
+.nav-bar .current a{
+    color:black;
+}
+.Maintext{
+    text-align: center;
+}
