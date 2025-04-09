@@ -23,7 +23,7 @@ const Restaurant = () => {
    } 
 
    fetchData()
-  },[])
+  },[restaurant])
   
   return (
     <>
