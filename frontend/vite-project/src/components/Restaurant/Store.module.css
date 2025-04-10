@@ -5,7 +5,16 @@
   justify-content: center;
   align-items: center;
 }
+
 .store img {
-  width: 100px;
-  height: 100px;
+  background-color: blue;
+  width: 120px;
+  height: 120px;
+}
+
+.text {
+  display: inline-block;
+  padding: 20px;
+  font-weight: bold;
+  white-space: nowrap;
 }
