@@ -1,3 +1,7 @@
+.nav {
+    position: sticky;
+    top: 0;
+}
 .nav-bar{
     list-style: none;
     display: flex;

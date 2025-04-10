@@ -20,10 +20,13 @@ const data = [
   // {name : "", url : '', b : "h3"},
   // {name : "", url : '', b : "h3"},
   // {name : "", url : '', b : "h3"},
-  {name : "홍대쌀국수", url : '', b : "student-hall"},
-  {name : "카레", url : '', b : "student-hall"},
-  {name : "돈까스학생회관점", url : '', b : "student-hall"},
-  {name : "육개장집학생회관점", url : '', b : "student-hall"},
+  {name : "홍대쌀국수", url : '홍대쌀국수사진경로', b : "student-hall"},
+  {name : "카레", url : '카레사진경로', b : "student-hall"},
+  {name : "돈까스학생회관점", url : '돈까스집사진경로', b : "student-hall"},
+  {name : "육개장집학생회관점", url : '육개장집사진경로', b : "student-hall"},
+  {name : "학생회관 식당1", url : '학생회관사진경로', b : "student-hall"},
+  {name : "학생회관 식당2", url : '학생회관사진경로', b : "student-hall"},
+  {name : "학생회관 식당3", url : '학생회관사진경로', b : "student-hall"},
 ]
 
 const RestaurantPage = () => {

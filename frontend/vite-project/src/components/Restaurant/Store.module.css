@@ -1,0 +1,11 @@
+.store {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.store img {
+  width: 100px;
+  height: 100px;
+}
