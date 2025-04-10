@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Outlet} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Outlet, Navigate} from 'react-router-dom'
 
 import Navbar from "./components/Navbar/Navbar"
 import HomePage from "./pages/Homepage"
@@ -25,7 +25,7 @@ function App() {
           <Route path='/restaurants/:restaurant' element={<RestaurantPage />} />
         </Route>
         <Route path='/restaurants/:restaurant/:store' element = {<StorePage/>}></Route>
-        <Route path='*' element = {<HomePage/>}></Route>
+        <Route path='*' element = {<Navigate to={"/"}/>}></Route>
       </Routes>           
     </Router>
   )
