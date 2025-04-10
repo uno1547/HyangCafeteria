@@ -3,9 +3,10 @@
     display: flex;
     background-color: #5090ff;
     justify-content: space-around;
-
 }
-
+.nav-bar li {
+    flex-shrink: 0;
+}
 .nav-bar li a{
     color: white;
     padding: 10px;

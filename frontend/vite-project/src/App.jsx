@@ -6,11 +6,12 @@ import Hyang1 from "./pages/Hyang1"
 import Restaurant from './pages/Restaurant'
 
 import "./App.css"
+import style from "./App.module.css"
 function App() {  
   return (
     <Router>
-        <div className= "inner" >
-            <Navbar/>
+      <Navbar/>
+        <div className= { style.inner }>
             <Routes>
               <Route path='/' element = {<HomePage/>}></Route>
               <Route path='/restaurants/h1' element = {<Hyang1/>}></Route>
