@@ -1,9 +1,15 @@
 import style from "./Store.module.css"
+import { useNavigate, useParams } from "react-router-dom"
 
 const Store = ({ data }) => {
+  const navigate = useNavigate()
+  // const {restaurant} = useParams() params 받아서 식당/가게 전체주소를 명시할수도있음
   const {name, url} = data
+  const navigateHandler = () => {
+
+  }
   return (
-    <div className={style.store} onClick={() => {console.log(name)}}>
+    <div className={style.store} onClick={() => {navigate(`${name}`)}}>
       <img src={url} alt={name}/>
       <span className={style.text}>{name}</span>
     </div>
