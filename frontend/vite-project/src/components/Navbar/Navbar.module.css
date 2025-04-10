@@ -1,14 +1,19 @@
+.nav {
+    position: sticky;
+    top: 0;
+}
 .nav-bar{
     list-style: none;
     display: flex;
     background-color: #5090ff;
     justify-content: space-around;
-
 }
-
+.nav-bar li {
+    flex-shrink: 0;
+}
 .nav-bar li a{
     color: white;
-    padding: 10px;
+    padding: 10px 25px;
 }
 
 .nav-bar .current a{

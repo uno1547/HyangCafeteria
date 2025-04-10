@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom"
 import style from "./Navbar.module.css"
 
 const Navbar = () => {
-
   const location =useLocation();
   console.log(location.pathname);
   
@@ -13,7 +12,7 @@ const Navbar = () => {
     // </div>
     <>
     <h1 className={style["Maintext"]}>Today Menu</h1>
-      <nav>
+      <nav className={style.nav}>
         <ul className={style["nav-bar"]}>
           <li className={location.pathname ==="/restaurants/h1" ? style["current"]:null}>
           <Link to="/restaurants/h1">향1</Link>
