@@ -1,7 +1,7 @@
 .grid-container {
   /* 650px이하까지는 열수 최대로 늘림 */
   display: grid;
-  margin-top: 20px;
+  margin-top: 30px;
   /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 50px;
@@ -12,4 +12,8 @@
   .grid-container {
     grid-template-columns: repeat(4, minmax(120px, 1fr));
   }
+}
+
+.inner {
+  padding: 10px;
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {useParams} from "react-router-dom"
 
-import Store from "../components/Restaurant/store";
+import Store from "../components/RestaurantPage/store";
 
 import restaurantStyle from "./RestaurantPage.module.css"
 
@@ -22,7 +22,7 @@ const data = [
   // {name : "", url : '', b : "h3"},
   // {name : "", url : '', b : "h3"},
   {name : "홍대쌀국수", url : '홍대쌀국수사진경로', b : "student-hall"},
-  {name : "카레", url : '카레사진경로', b : "student-hall"},
+  {name : "카레가게", url : '카레사진경로', b : "student-hall"},
   {name : "돈까스학생회관점", url : '돈까스집사진경로', b : "student-hall"},
   {name : "육개장집학생회관점", url : '육개장집사진경로', b : "student-hall"},
   {name : "학생회관 식당1", url : '학생회관사진경로', b : "student-hall"},
@@ -67,10 +67,8 @@ const RestaurantPage = () => {
     <>
       <h2>{name[restaurant]}</h2>
       <div className={restaurantStyle["grid-container"]}>
-        {stores?.map((el)=>{
-          return (
-            <Store key={el.name} data = {el}/>
-          )
+        {stores?.map((store)=>{
+          return <Store key={store.name} store = {store}/>
         })}
       </div>
     </>

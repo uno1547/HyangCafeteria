@@ -1,4 +1,4 @@
-.store {
+.menu {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
@@ -6,15 +6,17 @@
   align-items: center;
 }
 
-.store img {
-  background-color: blue;
+.menu img {
+  background-color: rgb(255, 125, 78);
   width: 120px;
   height: 120px;
 }
-
 .text {
-  display: inline-block;
-  padding: 20px;
-  font-weight: bold;
-  white-space: nowrap;
+  /* font-size: 10px; */
+  /* padding: 20px; */
+}
+.price {
+  color: #727272;
+  font-size: 10px;
+  padding: 0px;
 }
