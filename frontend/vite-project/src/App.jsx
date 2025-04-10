@@ -10,8 +10,8 @@ import style from "./App.module.css"
 function App() {  
   return (
     <Router>
+      <Navbar/>
         <div className= { style.inner }>
-            <Navbar/>
             <Routes>
               <Route path='/' element = {<HomePage/>}></Route>
               <Route path='/restaurants/h1' element = {<Hyang1/>}></Route>
