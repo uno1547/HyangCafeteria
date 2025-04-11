@@ -24,6 +24,11 @@
 
 .list {
   margin: 10px;
+  /* border: 1px solid black; */
+  /* color: black; */
+  /* max-width: 750px; */
+  margin: auto;
+  background-color: #dedede;
 }
 .list div {
   padding: 5px;
