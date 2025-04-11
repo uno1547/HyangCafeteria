@@ -1,0 +1,41 @@
+.nav {
+  margin: 10px;
+}
+
+.nav .timeText {
+  font-size: 20px;
+  color: #000000;
+  color: #b4b4b4;
+  color: #7596ee;
+}
+
+.nav button {
+  width: 33px;
+  padding: 5px;
+  color: #7596ee;
+  /* color: #000000; */
+  background-color: transparent;
+  /* background-color: rgb(195, 195, 195); */
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list {
+  margin: 10px;
+}
+.list div {
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+.list .menuText {
+  font-size: 25px;
+}
+
+.monthText a {
+  color: rgb(190, 190, 190);
+  padding: 5px;
+  margin: 5px;
+}

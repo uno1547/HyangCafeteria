@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
-import { useParams} from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 
 import Menu from "../components/StoresPage/Menu"
-import storePageStyle from "./RestaurantPage.module.css"
+import storePageStyle from "./StorePage.module.css"
 
 const menusData = [
   { name : "뼈해장국", price : "6500", url : "food.png"},
@@ -18,6 +18,7 @@ const menusData = [
 const StorePage = () => {
   const [menus, setMenus] = useState([])
   const {restaurant, store} = useParams()
+  const navigate = useNavigate()
   console.log(restaurant, store);
   useEffect(() => {
     const getMenus = async () => {
@@ -44,6 +45,12 @@ const StorePage = () => {
   return (
     <div className={storePageStyle.inner}>
       <h1>{store}</h1>
+      {/* <span onClick={(e) => {
+        e.preventDefault()
+        navigate(-1)
+      }}>&lt</span> */}
+      <span className={storePageStyle.previousBtn} onClick={() => {navigate(-1)}}>&lt;</span>
+      {/* <button className={storePageStyle.previousBtn} onClick={() => {navigate(-1)}}>돌아가기</button> */}
       <div className={storePageStyle["grid-container"]}>
         {menus.map((menu) => {
           return <Menu key={menu.name} menu = {menu}/>
