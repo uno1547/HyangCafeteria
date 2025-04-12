@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    gap : 5px;
+}
+.main img{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    
+}
+.header{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    gap: 5px;
+}
+.header span{
+    cursor: pointer;
+}
