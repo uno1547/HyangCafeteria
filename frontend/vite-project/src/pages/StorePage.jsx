@@ -36,10 +36,10 @@ const StorePage = () => {
         console.error(err)
       }
     }
-    // getMenus()
+    getMenus()
     // console.log('effect!');
     ///// 더미데이터로 테스트용 나중에 지우고 위에 getMenus()만 주석해제해주면됌
-    setMenus(menusData)
+    // setMenus(menusData)
     /////
   }, [])
   return (

@@ -16,12 +16,12 @@ const TodayMenu = () => {
   console.log(timeIdx);
   const getTodayMenu = async () => {
     try {
-      const response = await fetch("http://localhost:8080//restauransts/h1/today-menus")
+      const response = await fetch("http://localhost:8080/restaurants/h1/today-menus")
       if(!response.ok) {
         console.log('오늘의 메뉴 조회 실패!')
         return
       }
-      const { menus } = await response.json()
+      const menus  = await response.json()
       /*
       { 
         아침 : { type : "", items : [{name : , category : }, {name : , category : }, {name : , category :}], price : 6500 },
@@ -36,10 +36,10 @@ const TodayMenu = () => {
   }
   useEffect(() => {
     console.log('데이터불러오기!!');
-    // getTodayMenu()
+    getTodayMenu()
 
     //// 테스트용 더미데이터 얘 주석처리하고 위에 getTodayMenu로 
-    setDatas(dummyData)
+    // setDatas(dummyData)
     ////
   }, [])
   return (

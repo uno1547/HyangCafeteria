@@ -54,12 +54,12 @@ const RestaurantPage = () => {
     }
   } 
 
-  //  fetchData()
+  fetchData()
 
   ////// 더미데이터로테스트용 나중에 지우고 위에 fetchData()만 주석해제해주면됌
-  const storesList = data.filter(store => store.b == restaurant)
-  console.log(storesList);
-  setStores(storesList)
+  // const storesList = data.filter(store => store.b == restaurant)
+  // console.log(storesList);
+  // setStores(storesList)
   //////
   }, [restaurant])
   
