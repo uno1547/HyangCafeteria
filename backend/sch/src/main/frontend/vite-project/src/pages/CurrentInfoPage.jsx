@@ -1,7 +1,8 @@
 const CurrentInfoPage = () => {
   return (
     <div>
-      이곳은 실시간 현황페이지
+      <h1>천원의 아침밥</h1>
+      <div>잔여수량 90 / 100</div>
     </div>
   )
 }
