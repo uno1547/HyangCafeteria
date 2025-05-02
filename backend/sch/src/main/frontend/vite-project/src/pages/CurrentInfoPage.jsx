@@ -20,6 +20,10 @@ const CurrentInfoPage = () => {
           const data = JSON.parse(message.body);
           setQuantity(data.stock);
         });
+        // 🔽 연결되자마자 현재 수량 요청
+        client.publish({
+          destination: "/app/get-stock",
+        });
       },
       onStompError: (frame) => {
         console.error("STOMP 오류", frame);
