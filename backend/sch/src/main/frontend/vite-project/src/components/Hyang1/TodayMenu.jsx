@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import style from "./TodayMenu.module.css"
-import { data, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const time = ["아침", "점심", "저녁"]
 
