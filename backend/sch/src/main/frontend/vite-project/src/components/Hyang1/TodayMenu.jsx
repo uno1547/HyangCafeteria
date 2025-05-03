@@ -36,10 +36,10 @@ const TodayMenu = () => {
   }
   useEffect(() => {
     console.log('데이터불러오기!!');
-    getTodayMenu()
+    // getTodayMenu()
 
     //// 테스트용 더미데이터 얘 주석처리하고 위에 getTodayMenu로 
-    // setDatas(dummyData)
+    setDatas(dummyData)
     ////
   }, [])
   return (
