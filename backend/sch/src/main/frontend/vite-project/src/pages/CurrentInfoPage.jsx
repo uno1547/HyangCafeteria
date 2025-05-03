@@ -40,13 +40,4 @@ const CurrentInfoPage = () => {
 
   return (
     <div>
-      <h1 className={style["HeadText"]}>천원의 아침밥</h1>
-      <div>
-        <img src={ricepan} alt="" className={style["img"]} />
-      </div>
-      <div>잔여수량 {quantity}/ 100</div>
-    </div>
-  );
-};
 
-export default CurrentInfoPage;
