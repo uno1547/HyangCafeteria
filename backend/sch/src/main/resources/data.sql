@@ -80,3 +80,8 @@ VALUES
     ('김치찌개', 4500, null, CURRENT_DATE, 'DINNER', '국', 1),
     ('동그랑땡', 4500, null, CURRENT_DATE, 'DINNER', '반찬', 1),
     ('무생채', 4500, null, CURRENT_DATE, 'DINNER', '반찬', 1);
+
+
+
+-- data.sql
+INSERT INTO breakfast_stock (id, stock) VALUES (1, 100);

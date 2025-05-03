@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react"
 import style from "./TodayMenu.module.css"
+
 import { Link } from "react-router-dom"
 
 const time = ["아침", "점심", "저녁"]
 
-const dummyData = { 
-  아침 : { type : "", items : [ {name : "미역국", category : "국"}, {name : "잡곡밥", category : "밥"},  {name : "김치", category : "반찬"}, {name : "불고기", category : "반찬"} ], price : 6500 },
-  점심 : { type : "", items : [ {name : "김치", category : "반찬"}, {name : "현미밥", category : "밥"}, {name : "된장국", category : "국"}, {name : "잡채", category : "반찬"} ], price : 6500 },
-  저녁 : { type : "", items : [ {name : "김치볶음밥", category : "밥"}, {name : "계란국", category : "국"}, {name : "김치", category : "반찬"}, {name : "미역줄기", category : "반찬"} ], price : 6500 },
-}
+// const dummyData = {
+//   아침 : { type : "", items : [ {name : "미역국", category : "국"}, {name : "잡곡밥", category : "밥"},  {name : "김치", category : "반찬"}, {name : "불고기", category : "반찬"} ], price : 6500 },
+//   점심 : { type : "", items : [ {name : "김치", category : "반찬"}, {name : "현미밥", category : "밥"}, {name : "된장국", category : "국"}, {name : "잡채", category : "반찬"} ], price : 6500 },
+//   저녁 : { type : "", items : [ {name : "김치볶음밥", category : "밥"}, {name : "계란국", category : "국"}, {name : "김치", category : "반찬"}, {name : "미역줄기", category : "반찬"} ], price : 6500 },
+// }
 
 const TodayMenu = () => {
   const [datas, setDatas] = useState({})

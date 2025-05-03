@@ -20,7 +20,6 @@ const CurrentInfoPage = () => {
           const data = JSON.parse(message.body);
           setQuantity(data.stock);
         });
-
         client.publish({
           destination: "/app/get-stock",
         });
