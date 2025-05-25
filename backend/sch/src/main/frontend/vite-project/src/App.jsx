@@ -10,6 +10,7 @@ import CurrentInfoPage from './pages/CurrentInfoPage.jsx'
 
 import "./App.css"
 import style from "./App.module.css"
+import EnqueuePage from './pages/EnqueuePage.jsx'
 function App() {  
   return (
     <Router>
@@ -26,6 +27,7 @@ function App() {
           <Route path='/restaurants/h1' element={<Hyang1 />} />
           <Route path='/restaurants/:restaurant' element={<RestaurantPage />} />
         </Route>
+        <Route path='/enqueue' element={<EnqueuePage/>}></Route>
         <Route path='/kiosk' element = {<KioskPage/>}></Route>
         <Route path='/restaurants/h1/current-info' element = {<CurrentInfoPage/>}></Route>
         <Route path='/restaurants/:restaurant/:store' element = {<StorePage/>}></Route>
