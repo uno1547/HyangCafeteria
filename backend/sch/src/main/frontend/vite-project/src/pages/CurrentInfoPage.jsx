@@ -7,6 +7,7 @@ import { Client } from "@stomp/stompjs";
 
 const CurrentInfoPage = () => {
   const [quantity, setQuantity] = useState(0);
+  const [waitCnt, setWaitCnt] = useState(0)
 
   useEffect(() => {
     const client = new Client({
@@ -18,7 +19,9 @@ const CurrentInfoPage = () => {
         // 백엔드에서 설정한 구독 경로에 맞게 수정해야 함
         client.subscribe("/topic/stock", (message) => {
           const data = JSON.parse(message.body);
-          setQuantity(data.stock);
+          if(data.stock !== undefined && data.stock !== null) setQuantity(data.stock)
+          if(data.count !== undefined && data.count !== null) setWaitCnt(data.count)
+          // setQuantity(data.stock);
         });
         client.publish({
           destination: "/app/get-stock",
@@ -43,7 +46,8 @@ const CurrentInfoPage = () => {
       <div>
         <img src={ricepan} alt="" className={style["img"]} />
       </div>
-      <div>잔여수량 {quantity}/ 100</div>
+      <div>잔여수량 {quantity} / 100</div>
+      <div>대기인원수 {waitCnt}명</div>
     </div>
   );
 };
