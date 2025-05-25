@@ -1,0 +1,7 @@
+.inner {
+  text-align: center;
+  padding: 20px;
+}
+.inner>img {
+  width: 100%;
+}
