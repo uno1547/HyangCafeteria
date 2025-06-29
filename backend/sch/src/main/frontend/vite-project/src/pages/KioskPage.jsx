@@ -46,16 +46,16 @@ const KioskPage = () => {
   }
   return (
     <>
-      <h1>결제하기</h1>
-      <div>
-        <div className={style.name}>천원의 아침밥 [식권]</div>
+      <h1 className={style.headText}>결제하기</h1>
+      <div className={style.ticket}>
         <div className={style.img}></div>
         <div className={style.info}>
-          <span>가격</span>
+          <span className={style.name}>천원의 아침밥 [식권]</span>
           <span className={style.price}>1000원</span>
-        </div>
-        <div>
-          {/* 여기서 버튼의 활성/비활성을 결정하기 위해서 websocket으로 수량에대한 정보를 불러오는건 너무 부담인가 */}
+          {/* <div className={style.info}>
+            <span>가격</span>
+            <span className={style.price}>1000원</span>
+          </div> */}
           <Button text="결제하기" handler={paymentHandler} disabled = {loading}/>
         </div>
         {/* <div>{message}</div> */}

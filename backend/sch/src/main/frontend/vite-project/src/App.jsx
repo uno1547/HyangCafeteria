@@ -27,11 +27,17 @@ function App() {
           <Route path='/restaurants/h1' element={<Hyang1 />} />
           <Route path='/restaurants/:restaurant' element={<RestaurantPage />} />
         </Route>
-        <Route path='/enqueue' element={<EnqueuePage/>}></Route>
-        <Route path='/kiosk' element = {<KioskPage/>}></Route>
-        <Route path='/restaurants/h1/current-info' element = {<CurrentInfoPage/>}></Route>
-        <Route path='/restaurants/:restaurant/:store' element = {<StorePage/>}></Route>
-        <Route path='*' element = {<Navigate to={"/"}/>}></Route>
+        <Route element = {
+          <div className={style.inner}>
+            <Outlet/>
+          </div>
+        }>
+          <Route path='/enqueue' element={<EnqueuePage/>}></Route>
+          <Route path='/kiosk' element = {<KioskPage/>}></Route>
+        </Route>
+          {/* <Route path='*' element = {<Navigate to={"/"}/>}></Route> */}
+          <Route path='/restaurants/:restaurant/:store' element = {<StorePage/>}></Route>
+          <Route path='/restaurants/h1/current-info' element = {<CurrentInfoPage/>}></Route>
       </Routes>           
     </Router>
   )

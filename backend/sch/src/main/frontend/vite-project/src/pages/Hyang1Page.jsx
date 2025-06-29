@@ -10,8 +10,8 @@ const Hyang1 = () => {
 
   return (
     <>
-      <h2>향설생활관1</h2>
-      <h3 style={{color:"#c2c2c2"}}>{formatted}</h3>
+      <h2 className={hyang1PageStyle["cafeteria-name"]}>향설생활관1</h2>
+      <h3 className={hyang1PageStyle["date-text"]}>{formatted}</h3>
       <TodayMenu/>
     </>
   )

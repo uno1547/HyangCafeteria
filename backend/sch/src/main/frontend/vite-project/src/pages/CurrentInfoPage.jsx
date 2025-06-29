@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ricepan from "../../../img/천밥.png";
 import style from "./CurrentInfo.module.css";
 
@@ -8,6 +9,8 @@ import { Client } from "@stomp/stompjs";
 const CurrentInfoPage = () => {
   const [quantity, setQuantity] = useState(0);
   const [waitCnt, setWaitCnt] = useState(0)
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     const client = new Client({
@@ -41,14 +44,70 @@ const CurrentInfoPage = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className={style["HeadText"]}>천원의 아침밥</h1>
-      <div>
+    <>
+      <h1 className={style["HeadText"]}>대기 현황</h1>
+      <span className={style.previousBtn} onClick={() => {navigate(-1)}}>&lt; 돌아가기</span>
+      {/* <div>
         <img src={ricepan} alt="" className={style["img"]} />
+      </div> */}
+
+
+      {/* <div className={style["cnt-div1"]}>
+        <div className={style.stock1}>
+          <span className={style.cntH}>잔여 수량</span>
+          <span className = {style.cntV}>{`${quantity ? quantity: 50} / 100`}</span>
+          <span className={style.cntH}>개</span>
+        </div>
+        <div className={style.wait1}>
+          <span className={style.cntH}>대기 인원 수</span>
+          <span className = {style.cntV}>{`${waitCnt ? waitCnt : 5}`}</span>
+          <span className={style.cntH}>명</span>
+        </div>
+        <span className={style.alert}>
+          {
+            "먹을수 있어요"
+          }
+        </span>
+      </div> */}
+
+
+
+      {/* <div className={style["cnt-div2"]}>
+        <div className={style.stock2}>
+          <span className={style.cntH}>잔여 수량</span>
+          <span className = {style.cntV}>{`${quantity ? quantity : 50} / 100 개`}</span>
+        </div>
+        <div className={style.wait2}>
+          <span className={style.cntH}>대기 인원 수</span>
+          <span className = {style.cntV}>{`${waitCnt ? waitCnt : 50} 명`}</span>
+        </div>
+        <span className={style.alert}>
+          {
+            "먹을수 있어요"
+          }
+        </span>
+      </div> */}
+
+
+
+      <div className={style["cnt-div3"]}>
+        <div>
+          <div className={style.stock3}>
+            <span className={style.cntH}>잔여 수량</span>
+            <span className = {style.cntV}>{`${quantity ? quantity : 50} / 100 개`}</span>
+          </div>
+          <div className={style.wait3}>
+            <span className={style.cntH}>대기 인원 수</span>
+            <span className = {style.cntV}>{`${waitCnt ? waitCnt : 5} 명`}</span>
+          </div>
+        </div>
+        <span className={style.alert}>
+          {
+            "먹을수 있어요"
+          }
+        </span>
       </div>
-      <div>잔여수량 {quantity} / 100</div>
-      <div>대기인원수 {waitCnt}명</div>
-    </div>
+    </>
   );
 };
 
