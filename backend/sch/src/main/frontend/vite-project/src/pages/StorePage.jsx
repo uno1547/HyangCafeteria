@@ -36,10 +36,10 @@ const StorePage = () => {
         console.error(err)
       }
     }
-    getMenus()
+    // getMenus()
     // console.log('effect!');
     ///// 더미데이터로 테스트용 나중에 지우고 위에 getMenus()만 주석해제해주면됌
-    // setMenus(menusData)
+    setMenus(menusData)
     /////
   }, [])
   return (
@@ -49,7 +49,7 @@ const StorePage = () => {
         e.preventDefault()
         navigate(-1)
       }}>&lt</span> */}
-      <span className={storePageStyle.previousBtn} onClick={() => {navigate(-1)}}>&lt;</span>
+      <span className={storePageStyle.previousBtn} onClick={() => {navigate(-1)}}>&lt; 돌아가기</span>
       {/* <button className={storePageStyle.previousBtn} onClick={() => {navigate(-1)}}>돌아가기</button> */}
       <div className={storePageStyle["grid-container"]}>
         {menus.map((menu) => {

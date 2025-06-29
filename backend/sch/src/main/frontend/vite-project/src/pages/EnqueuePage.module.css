@@ -1,11 +1,49 @@
-.img {
-    width: 200px;
-    height: 200px;
-    background-color: gray;
-    margin: auto;
-    margin-top: 10px;
-  }
-  .name {
-    font-weight: bold;
+.wrapper {
+  /* width: 80%; */
+  width: 700px;
+  /* background-color: blanchedalmond; */
+  margin: auto;
+  /* display: flex; */
+}
+.cnt-div {
+  display: flex;
+  justify-content: center;
+}
+
+.cntH {
     font-size: 20px;
-  }
+    color: rgb(106, 106, 106);
+}
+
+.cntV {
+    font-size: 37px;
+    color: rgb(0, 0, 0);
+}
+
+.stock div,
+.wait div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock, 
+.wait {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+}
+
+
+
+.btn-div {
+  background-color: rgb(214, 214, 214);
+  border-radius: 10px;
+  width: 350px;
+  padding: 30px 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+  flex-grow: 1;
+  flex: 3;
+}
