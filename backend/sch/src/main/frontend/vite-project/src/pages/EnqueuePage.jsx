@@ -1,11 +1,11 @@
-import { startTransition, useState } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import ricepan from "../../../img/천밥.png";
 import Button from "../components/Button/Button";
 import style from "./EnqueuePage.module.css"
 const EnqueuePage = () => {
 
     const [loading, setLoading] = useState(false);
-
     const NumberTicketHandler = async () => {
         setLoading(true);
         console.log("번호표 뽑음!");
