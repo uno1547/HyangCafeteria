@@ -1,7 +1,84 @@
 .img{
-    width: 400px;
+    width: 25 0px;
     height: 300px;
 }
 .HeadText{
-    color: red;
+    /* color: red; */
+    margin: auto;
+    padding: 20px 0px;
+    /* border-bottom: 1px solid black; */
+
+    /* color: rgb(255, 255, 255); */
+    background-color: #5090ff;
 }
+
+.previousBtn {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    /* color: white; */
+}
+
+.cntH {
+    font-size: 20px;
+    color: rgb(106, 106, 106);
+}
+
+.cntV {
+    font-size: 37px;
+    color: rgb(0, 0, 0);
+}
+
+.alert {
+    font-size: 25px;
+}
+
+.cnt-div1 {
+
+}
+
+.stock1,
+.wait1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.cnt-div2 {
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: ; */
+}
+
+.stock2,
+.wait2 {
+    display: flex;
+    flex-direction: column;    
+    padding: 15px;
+}
+
+
+.cnt-div3 {
+    /* display: flex; */
+    margin-top: 10px;
+}
+
+.cnt-div3 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock3,
+.wait3 {
+    display: flex;
+    flex-direction: column;    
+    padding: 30px;
+}
+
+.stock3 {
+    /* border-right: 1px solid rgb(172, 172, 172); */
+}
+
